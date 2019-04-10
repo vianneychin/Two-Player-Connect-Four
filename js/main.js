@@ -73,3 +73,19 @@ const checkDiagonal = () => {
         }
     }
 }
+$columns.click((e => {
+    let $column = $(e.currentTarget).children()
+    for (let i = $(e.currentTarget).children().length - 1; i >= 0; i--) {
+            if ($(e.currentTarget).children()[i].style.backgroundColor === "") {
+                $(e.currentTarget).children()[i].style.backgroundColor = game.currentPlayer.color
+
+                checkVertical($column)
+                checkHorizontal($columns, i)
+                checkDiagonal()
+                switchPlayers()
+                return
+            }
+        }
+    }
+))
+setPlayer()
