@@ -29,7 +29,7 @@ const checkVertical = (arrayOfColumn) => {
         }
     }
 }
-const checkHorizontal = (columns, index) => {        // left to right\
+const checkHorizontal = (columns, index) => {
     for (let i = 0; i < 5; i++) {
         if ($(columns[i]).children()[index].style.backgroundColor === game.currentPlayer.color &&
             $(columns[i+1]).children()[index].style.backgroundColor === game.currentPlayer.color &&
@@ -41,21 +41,21 @@ const checkHorizontal = (columns, index) => {        // left to right\
 }
 const checkDiagonal = () => {
     let consecutiveDiagonalCount = 0
-    for (let i = 0; i < 3; i++) {
-        for (let j = 0; j < 7; j++) {
+    for (let row = 0; row < 3; row++) {
+        for (let col = 0; col < 7; col++) {
             let count = 0
-            if ($columns[j].children[i].style.backgroundColor === game.currentPlayer.color) {
-                if (j < 4) {
-                    for (let m = 0; m < 4; m++) {
-                        if ($columns[j + m].children[i + m].style.backgroundColor === game.currentPlayer.color) {
+            if ($columns[col].children[row].style.backgroundColor === game.currentPlayer.color) {
+                if (col < 4) {
+                    for (let num = 0; num < 4; num++) {
+                        if ($columns[col + num].children[row + num].style.backgroundColor === game.currentPlayer.color) {
                             count++
                         }
                     }
                 }
-                if (j >= 3 && count != 4) {
+                if (col >= 3 && count != 4) {
                     count = 0
-                    for (let m = 0; m < 4; m++) {
-                        if ($columns[j - m].children[i + m].style.backgroundColor === game.currentPlayer.color) {
+                    for (let num = 0; num < 4; num++) {
+                        if ($columns[col - num].children[row + num].style.backgroundColor === game.currentPlayer.color) {
                             count++
                         }
                     }
