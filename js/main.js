@@ -25,7 +25,7 @@ const checkVertical = (arrayOfColumn) => {
             (arrayOfColumn[i + 1]).style.backgroundColor === game.currentPlayer.color &&
             (arrayOfColumn[i + 2]).style.backgroundColor === game.currentPlayer.color &&
             (arrayOfColumn[i + 3]).style.backgroundColor === game.currentPlayer.color) {
-                alert(`win`)
+                alert(`${game.currentPlayer.color} wins`)
         }
     }
 }
@@ -63,7 +63,7 @@ const checkDiagonal = () => {
                 if (count === 4) {
                     consecutiveDiagonalCount = 1
                     count = 0
-                    alert(`win`)
+                    alert(`${game.currentPlayer.color} wins`)
                     break
                 }
             }
