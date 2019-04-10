@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-
 h1 {
     font-family: 'Calligraffitti';
     text-align: center;
@@ -12,6 +11,9 @@ h1 {
     font-variant: small-caps;
     letter-spacing: 25px;
     margin-top: 7%;
+    font-family: 'Bleeding Cowboys';
+    font-weight: normal;
+    font-style: normal;
 }
 body {
     background: url("https://i.imgur.com/BXBHbB9.jpg");
