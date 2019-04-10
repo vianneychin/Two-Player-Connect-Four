@@ -39,3 +39,37 @@ const checkHorizontal = (columns, index) => {        // left to right\
             }
     }
 }
+const checkDiagonal = () => {
+    let consecutiveDiagonalCount = 0
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 7; j++) {
+            let count = 0
+            if ($columns[j].children[i].style.backgroundColor === game.currentPlayer.color) {
+                if (j < 4) {
+                    for (let m = 0; m < 4; m++) {
+                        if ($columns[j + m].children[i + m].style.backgroundColor === game.currentPlayer.color) {
+                            count++
+                        }
+                    }
+                }
+                if (j >= 3 && count != 4) {
+                    count = 0
+                    for (let m = 0; m < 4; m++) {
+                        if ($columns[j - m].children[i + m].style.backgroundColor === game.currentPlayer.color) {
+                            count++
+                        }
+                    }
+                }
+                if (count === 4) {
+                    consecutiveDiagonalCount = 1
+                    count = 0
+                    alert(`win`)
+                    break
+                }
+            }
+        }
+        if (consecutiveDiagonalCount === 1) {
+            break
+        }
+    }
+}
