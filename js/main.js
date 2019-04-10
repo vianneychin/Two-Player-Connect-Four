@@ -29,3 +29,13 @@ const checkVertical = (arrayOfColumn) => {
         }
     }
 }
+const checkHorizontal = (columns, index) => {        // left to right\
+    for (let i = 0; i < 5; i++) {
+        if ($(columns[i]).children()[index].style.backgroundColor === game.currentPlayer.color &&
+            $(columns[i+1]).children()[index].style.backgroundColor === game.currentPlayer.color &&
+            $(columns[i+2]).children()[index].style.backgroundColor === game.currentPlayer.color &&
+            $(columns[i+3]).children()[index].style.backgroundColor === game.currentPlayer.color) {
+                alert(`${game.currentPlayer.color} wins`)
+            }
+    }
+}
