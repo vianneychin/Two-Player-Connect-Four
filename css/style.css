@@ -1,3 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+h1 {
+    font-family: 'Calligraffitti';
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    font-variant: small-caps;
+    letter-spacing: 25px;
+    margin-top: 7%;
+}
 body {
-    background: grey;
+    background: url("https://i.imgur.com/BXBHbB9.jpg");
+    background-repeat: no-repeat; 
+    background-position: top;
+    height: 95vh;
+
+}
+
+#game-board {
+    width: 720px;
+    height: 600px;
+    border: .8px solid rgb(0, 0, 0, .5);
+    display: flex;
+    margin: auto;
+
+    border-radius: 5%;
+    background: url("https://i.imgur.com/Dh83iPY.jpg?1");
+    box-shadow: 5px 5px 25px 3px black;
+}
+.column {
+    width: 100px;
+    height: 600px;
+    margin: auto;
+}
+
+.column:hover {
+    background-color: rgba(103, 212, 220, 0.2);
+}
+
+
+.circle {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border: .5px solid black;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: rgb(239, 239, 239);
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+    animation-duration: 3s;
 }
