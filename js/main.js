@@ -40,35 +40,35 @@ const checkHorizontal = (columns, index) => {
     }
 }
 const checkDiagonal = () => {
-    let consecutiveDiagonalCount = 0
+    let colorCount = 0
     for (let row = 0; row < 3; row++) {
         for (let col = 0; col < 7; col++) {
-            let count = 0
+            let colorCount = 0
             if ($columns[col].children[row].style.backgroundColor === game.currentPlayer.color) {
                 if (col < 4) {
                     for (let num = 0; num < 4; num++) {
                         if ($columns[col + num].children[row + num].style.backgroundColor === game.currentPlayer.color) {
-                            count++
+                            colorCount++
                         }
                     }
                 }
-                if (col >= 3 && count != 4) {
-                    count = 0
+                if (col >= 3 && colorCount != 4) {
+                    colorCount = 0
                     for (let num = 0; num < 4; num++) {
                         if ($columns[col - num].children[row + num].style.backgroundColor === game.currentPlayer.color) {
-                            count++
+                            colorCount++
                         }
                     }
                 }
-                if (count === 4) {
-                    consecutiveDiagonalCount = 1
-                    count = 0
+                if (colorCount === 4) {
+                    colorCount = 1
+                    colorCount = 0
                     alert(`${game.currentPlayer.color} wins`)
                     break
                 }
             }
         }
-        if (consecutiveDiagonalCount === 1) {
+        if (colorCount === 1) {
             break
         }
     }
