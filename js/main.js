@@ -19,3 +19,13 @@ const switchPlayers = () =>{
         game.currentPlayer = yellowToken
     }
 }
+const checkVertical = (arrayOfColumn) => { 
+    for (let i = 0; i < 3; i++) {
+        if ((arrayOfColumn[i]).style.backgroundColor === game.currentPlayer.color &&
+            (arrayOfColumn[i + 1]).style.backgroundColor === game.currentPlayer.color &&
+            (arrayOfColumn[i + 2]).style.backgroundColor === game.currentPlayer.color &&
+            (arrayOfColumn[i + 3]).style.backgroundColor === game.currentPlayer.color) {
+                alert(`win`)
+        }
+    }
+}
