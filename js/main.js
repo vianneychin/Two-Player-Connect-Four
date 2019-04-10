@@ -12,3 +12,10 @@ const blueToken = game.players[1]
 const setPlayer = () => {
     game.currentPlayer = game.players[0]
 }
+const switchPlayers = () =>{
+    if (game.currentPlayer === yellowToken) {
+        game.currentPlayer = blueToken
+    } else if (game.currentPlayer === blueToken) {
+        game.currentPlayer = yellowToken
+    }
+}
