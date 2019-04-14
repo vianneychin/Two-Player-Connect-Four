@@ -4,6 +4,8 @@
 The first player piece is yellow and the second player piece is blue. <br>
 The game is best enjoyed with a friend, coworker, or family. <br>
 Just your simple tabletop game coded and rendered into your computer screen. <br>
+<h2>Getting Started</h2> <br>
+<p>Click a column to make the first <a>play</a>.</p>
 <p></p><br>
 <img src="https://i.imgur.com/4Hh98Sk.png">
 
@@ -16,4 +18,11 @@ Just your simple tabletop game coded and rendered into your computer screen. <br
     <li>Javascript</li>
     <li>jQuery</li>
     <li>Open Source Images</li>
+</ul>
+<br>
+<h2>Next Steps</h2>
+<ul>
+    <li>Add animations</li>
+    <li>Add Reset Button</li>
+    <li>Mobile and Table Device Friendly</li>
 </ul>
