@@ -5,7 +5,7 @@ The first player piece is yellow and the second player piece is blue. <br>
 The game is best enjoyed with a friend, coworker, or family. <br>
 Just your simple tabletop game coded and rendered into your computer screen. <br>
 <h2>Getting Started</h2> <br>
-<p>Click a column to make the first <strong><a href="https://vianneychin.github.io/2-Player-Connect-4/">play</a></strong.</p>
+<p>Click a column to make the first <strong><a href="https://vianneychin.github.io/2-Player-Connect-4/">play</a></strong>.</p>
 <p></p><br>
 <img src="https://i.imgur.com/4Hh98Sk.png">
 
