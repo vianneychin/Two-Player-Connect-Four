@@ -23,6 +23,7 @@ Just your simple tabletop game coded and rendered into your computer screen. <br
 <h2>Next Steps</h2>
 <ul>
     <li>Add animations</li>
+    <li>Replace the alerts.</li>
     <li>Add Reset Button</li>
     <li>Mobile and Table Device Friendly</li>
 </ul>
