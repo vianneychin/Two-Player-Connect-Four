@@ -4,7 +4,7 @@
 The first player piece is yellow and the second player picee is blue. <br>
 The game is best enjoyed with a friend, coworker or family. <br>
 Just your simple tabletop game coded and rendered into your computer screen. <br>
-![alt text](https://i.imgur.com/4Hh98Sk.png)
+<img src="https://i.imgur.com/4Hh98Sk.png">
 
 
 
